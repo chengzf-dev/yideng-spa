@@ -26,6 +26,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.8",
+    "@commitlint/cli": "^20.2.0",
+    "@commitlint/config-conventional": "^20.2.0",
     "@soda/friendly-errors-webpack-plugin": "^1.8.1",
     "@swc/core": "^1.15.3",
     "@swc/jest": "^0.2.39",
@@ -43,6 +45,7 @@
     "husky": "^9.1.7",
     "jest": "^30.2.0",
     "jest-stare": "^2.5.3",
+    "lint-staged": "^16.2.7",
     "mini-css-extract-plugin": "^2.9.4",
     "node-notifier": "^10.0.1",
     "postcss": "^8.5.6",
@@ -55,6 +58,10 @@
     "webpack": "^5.103.0",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+    ]
   },
   "dependencies": {
     "@welldone-software/why-did-you-render": "^10.0.1",
