@@ -6,7 +6,7 @@
   "scripts": {
     "client:dev": "webpack --mode development",
     "client:prod": "webpack --mode production",
-    "client:server": "webpack serve --mode production",
+    "client:server": "webpack serve --mode development",
     "prepare": "husky",
     "test:e2e": "cypress open",
     "test": "jest tests/unit --collectCoverage --reporters default jest-stare",
@@ -40,7 +40,6 @@
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.3",
     "cypress": "^15.7.1",
-    "ethers": "^6.16.0",
     "html-webpack-plugin": "^5.6.5",
     "husky": "^9.1.7",
     "jest": "^30.2.0",
@@ -57,7 +56,9 @@
     "themed-progress-plugin": "^1.0.1",
     "webpack": "^5.103.0",
     "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.2"
+    "webpack-dev-server": "^5.2.2",
+    "webpack-merge": "^6.0.1",
+    "yargs-parser": "^22.0.0"
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
@@ -71,8 +72,7 @@
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
     "react-router-dom": "^7.10.1",
-    "scripty": "^3.0.0",
-    "webpack-merge": "^6.0.1",
-    "yargs-parser": "^22.0.0"
+    "ethers": "^6.16.0",
+    "scripty": "^3.0.0"
   }
 }
